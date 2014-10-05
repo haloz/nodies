@@ -1,0 +1,11 @@
+{
+    "name" : "nodies",
+    "description" : "Nodies - Node.JS Movies Database",
+    "version" : "0.0.2",
+    "private" : true,
+    "dependencies" : {
+        "connect" : "*",
+        "serve-static" : "*",
+        "forever" : "*"
+    }
+}
