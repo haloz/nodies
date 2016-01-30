@@ -17,14 +17,21 @@
 			"languages" : ["en"],
 			"length" : 91,
 			"imdb" : "http://www.imdb.com/title/tt1454468/",
-			"foramat" : "HD"
+			"format" : "HD"
 		},
 		{
 			"title" : "The Hobbit - An Unexpected Journey",
 			"languages" : ["en"],
 			"length" : 183,
 			"imdb" : "http://www.imdb.com/title/tt0903624/",
-			"foramat" : "HD"
+			"format" : "HD"
+		},		
+		{
+			"title" : "Jurassic Park",
+			"languages" : ["en"],
+			"length" : 127,
+			"imdb" : "http://www.imdb.com/title/tt0107290/",
+			"format" : "SD"
 		}
 	];
 })();
