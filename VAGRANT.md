@@ -1,6 +1,6 @@
 Easyily spawn the latest nodies app
 =====================
-With this Vagrantfile you can automatically create a VM that runs the latest nodies app. 
+With this Vagrantfile you can automatically create a VM that runs the latest nodies app. This saves the hassle to setup a virtualbox VM yourself, which is especially useful and time saving when working on the same codebase with a whole team.
 
 What it does
 -------------
@@ -9,7 +9,6 @@ This essential does:
 * install docker
 * fetch the latest docker image build of the nodies app from the automatic build in docker hub
 * start the application
-* (setup automatic update & start at VM start time)
 
 Steps to set it up
 -------------
@@ -47,3 +46,9 @@ end
 vagrant up
 ```
 * you should now be able to access the app from your host computer via http://127.0.0.1:20080/
+
+
+What's next?
+-------------
+* setup automatic update when the docker image on docker hub is change - for example with watchtower (https://www.ctl.io/developers/blog/post/watchtower-automatic-updates-for-docker-containers/)
+* map the shared folders to the source code so that a dev can fiddle with the code directly in the docker container
