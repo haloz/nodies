@@ -32,6 +32,13 @@
 			"length" : 127,
 			"imdb" : "http://www.imdb.com/title/tt0107290/",
 			"format" : "SD"
-		}
+		},
+		{
+			"title" : "Ted",
+			"languages" : ["en"],
+			"length" : 106,
+			"imdb" : "http://www.imdb.com/title/tt1637725/",
+			"format" : "SD"
+		}		
 	];
 })();
