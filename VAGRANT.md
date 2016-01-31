@@ -36,10 +36,12 @@ Vagrant.configure(2) do |config|
     end
     config.vm.provision "docker" do |d|
         d.run "haloz/nodies",
-            args: "-d -p 20080:20080"
+            daemonize: true,
+            args: "-p 20080:20080"
     end
 end
 ```
+* this includes a docker provisioning which automatic installs docker, pulls our application from docker hub and runs it with parameters for mapping the network port. More on provisioning with docker here: https://www.vagrantup.com/docs/provisioning/docker.html
 * boot up the VM via:
 ```
 vagrant up
