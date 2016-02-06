@@ -15,12 +15,12 @@ Steps to set it up
 To get this setup in place I did these steps:
 * on the host machine install VirtualBox, the VirtualBox Extension Pack and a SSH client like putty
 * on the host also install Vagrant by following https://www.vagrantup.com/docs/installation/
-* create an own folder for a new box, browser there via cmd-line and setup a new box (see https://www.vagrantup.com/docs/getting-started/boxes.html)
+* create an own folder for a new box, browse there via cmd-line and setup a new box (see https://www.vagrantup.com/docs/getting-started/boxes.html)
 ```
 vagrant init
 ```
 this creates a new Vagrantfile
-* our base image is the current dev of ubuntu (15.10 for me). There's a box for that at the hashicorp atlas: https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1510
+* our base image is the current development version of ubuntu (15.10 for me). There's a box for that in the hashicorp atlas: https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1510
 * change the Vagrantfile to be based on that image:
 ```
 # -*- mode: ruby -*-
@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
     end
 end
 ```
-* this includes a docker provisioning which automatic installs docker, pulls our application from docker hub and runs it with parameters for mapping the network port. More on provisioning with docker here: https://www.vagrantup.com/docs/provisioning/docker.html
+* this Vagrantfile includes a docker provisioning which automatic installs docker, pulls our application from docker hub and runs it with parameters for mapping the network port. More on provisioning with docker here: https://www.vagrantup.com/docs/provisioning/docker.html
 * boot up the VM via:
 ```
 vagrant up
@@ -51,4 +51,4 @@ vagrant up
 What's next?
 -------------
 * setup automatic update when the docker image on docker hub is change - for example with watchtower (https://www.ctl.io/developers/blog/post/watchtower-automatic-updates-for-docker-containers/)
-* map the shared folders to the source code so that a dev can fiddle with the code directly in the docker container
+* map the shared folders to the source code so that a developer can fiddle with the code directly in the docker container. On the developer's box this folder can then commited to his github repo - which then again triggers the automatic build for the docker container

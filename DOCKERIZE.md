@@ -4,7 +4,7 @@ Let's dockerize a Node.js app!
 * On your host PC install Virtualbox and sourcetree
 * Create a new ubuntu 64bit VM that uses a network bridge instead of NAT. This makes running stuff on the VM much easuer via shell/putty connection
 * Install a minimal ubuntu 64bit server installation that has SSHd server running
-* Create a github account if you don't have one yet and fork a node.JS project, i.e. from by project https://github.com/haloz/nodies.git. I'll just call your form "forkies" for now :)
+* Create a github account if you don't have one yet and fork a node.JS project, i.e. from by project https://github.com/haloz/nodies.git. I'll just call your fork "forkies" for now :)
 * install docker on the VM via the tutorial from https://docs.docker.com/linux/
 * go through the whole tutorial https://docs.docker.com/linux/. Be sure that you create a dockerhub account.
 * do the automatic build tutorial at https://docs.docker.com/docker-hub/builds/
