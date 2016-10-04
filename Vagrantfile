@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-    config.vm.box = "boxcutter/ubuntu1510"
+    config.vm.box = "boxcutter/ubuntu1604"
     config.vm.network "forwarded_port", guest: 20080, host: 20080
     config.vm.provider "virtualbox" do |vb|
         vb.gui = false
